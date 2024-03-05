@@ -33,3 +33,37 @@ for ip in net:
     if s.count('1') > s.count('0'):
         counter += 1
 print(counter)
+
+
+
+"""
+def max_consecutive_vowels(s):
+    vowels = set(['A', 'E', 'I', 'O', 'U', 'Y'])
+    n = len(s)
+    max_len = 0
+    cur_len = 0
+    cur_vowels = {}
+    
+    for i in range(n):
+        if s[i] in vowels:
+            if s[i] not in cur_vowels:
+                cur_vowels[s[i]] = 1
+            else:
+                cur_vowels[s[i]] += 1
+            
+            if cur_vowels[s[i]] <= 8:
+                cur_len += 1
+                max_len = max(max_len, cur_len)
+            else:
+                cur_len = 0
+                cur_vowels = {}
+        else:
+            cur_len += 1
+            max_len = max(max_len, cur_len)
+    
+    return max_len
+
+# Пример использования
+text = "ABCDAAEEIIUUUOYYYBCDEFGHIJK"
+print(max_consecutive_vowels(text))  # Выводит 13
+"""
