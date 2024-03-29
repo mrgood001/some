@@ -17,7 +17,7 @@ for i in range(590):
     t.goto((xt(i) * 20, yt(i) * 20))
     #одноцветное
     #t.pencolor("red")
-    #цветная ахинея
+    #много цветов
     t.pencolor((255-i) % 255, i % 255, (255 + i) // 2 % 255)
     t.goto(0, 0)
 t.hideturtle()
