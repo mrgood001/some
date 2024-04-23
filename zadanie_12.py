@@ -12,9 +12,9 @@
 Сколько цифр было в исходной строке?
 '''
 
-for one in range(1,100):
-    for two in range(1,100):
-        for three in range(1,100):
+for one in range(0,100):
+    for two in range(0,100):
+        for three in range(0,100):
             st = '0' +one*'1' +two*'2' +three*'3' + '0'
             while '00' not in st:
                 st = st.replace('01', '210',1)
